@@ -36,6 +36,21 @@ app.delete("/users/:id", (req, res) => {
     res.status(200).json({mensagem: "Usuário deletado com sucesso!"});
 });
 
+//atualizando
+app.put("/users/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const usuarioAtualizado = req.body;
+    const emailatualziado = req.body;
+
+
+
+    users = users.filter(user => user.id !== id);
+    users.push(usuarioAtualizado, emailatualziado);
+    
+    
+
+    res.status(200).json({mensagem: "Usuário atualizado com sucesso!", usuario: usuarioAtualizado});
+});
 
 
 
