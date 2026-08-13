@@ -27,6 +27,14 @@ app.post("/users", (req, res) => {
 
 });
 
+//removendo
+app.delete("/users/:id", (req, res) => {
+    const id = Number(req.params.id);
+
+    users = users.filter(user => user.id !== id);
+
+    res.status(200).json({mensagem: "Usuário deletado com sucesso!"});
+});
 
 
 
