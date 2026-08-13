@@ -1,0 +1,17 @@
+🟢 Desafio 1 — API de Usuários
+
+Crie uma API REST usando Node.js + Express.
+
+Sua API deve permitir:
+
+GET /usuarios → listar todos os usuários
+GET /usuarios/:id → buscar um usuário pelo ID
+POST /usuarios → cadastrar um usuário
+PUT /usuarios/:id → atualizar um usuário
+DELETE /usuarios/:id → excluir um usuário
+
+Cada usuário deve possuir:
+
+id
+nome
+email
