@@ -1,17 +1,27 @@
-🟢 Desafio 1 — API de Usuários
+🟢 Desafio 2 — API de Produtos
 
-Crie uma API REST usando Node.js + Express.
+Crie uma API REST para produtos.
 
-Sua API deve permitir:
-
-GET /usuarios → listar todos os usuários
-GET /usuarios/:id → buscar um usuário pelo ID
-POST /usuarios → cadastrar um usuário
-PUT /usuarios/:id → atualizar um usuário
-DELETE /usuarios/:id → excluir um usuário
-
-Cada usuário deve possuir:
+Cada produto deve ter:
 
 id
 nome
-email
+preco
+categoria
+
+Rotas obrigatórias:
+
+GET    /produtos
+GET    /produtos/:id
+POST   /produtos
+PUT    /produtos/:id
+DELETE /produtos/:id
+
+Regras:
+
+Não permitir cadastrar produto sem nome.
+Não permitir cadastrar produto sem preco.
+preco deve ser maior que 0.
+Retornar status HTTP adequados.
+
+Sem banco de dados. Apenas array em memória.
