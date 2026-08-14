@@ -1,27 +1,28 @@
-🟢 Desafio 2 — API de Produtos
+🟡 Desafio 3 — API de Tarefas
 
-Crie uma API REST para produtos.
+Crie uma API REST de tarefas.
 
-Cada produto deve ter:
+Cada tarefa deve possuir:
 
 id
-nome
-preco
-categoria
+titulo
+descricao
+concluida
 
-Rotas obrigatórias:
+Crie as rotas:
 
-GET    /produtos
-GET    /produtos/:id
-POST   /produtos
-PUT    /produtos/:id
-DELETE /produtos/:id
+GET    /tarefas
+GET    /tarefas/:id
+POST   /tarefas
+PUT    /tarefas/:id
+DELETE /tarefas/:id
 
 Regras:
 
-Não permitir cadastrar produto sem nome.
-Não permitir cadastrar produto sem preco.
-preco deve ser maior que 0.
-Retornar status HTTP adequados.
+titulo é obrigatório.
+descricao é obrigatória.
+concluida deve ser true ou false.
+Uma tarefa criada deve começar como concluida: false.
+Não permita atualizar uma tarefa que não existe.
 
-Sem banco de dados. Apenas array em memória.
+Sem banco de dados. Array em memória.
